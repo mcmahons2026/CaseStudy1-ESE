@@ -3,4 +3,4 @@
 % Set random number generator to be repeatable.
 rng('default');
 load COVIDbyCounty
-[CNTY_kmeans,centroids] = kmeans(CNTY_COVID,9);
+[cluster_kmeans,centroids] = kmeans(article_histograms.',9);
